@@ -88,6 +88,7 @@ $( document ).ready(function() {
             $randomWordArray = wordToArray($randomWord);
             $randomWordArrayExtended = wordToArrayExtended($randomWordArray);
             $screenArray = ExtendedArrayToScreenArray($randomWordArrayExtended);
+            $("#title").css("background-image", 'url("images/title_en.png")');
 
             /* toon in console (mag later weg) */
             console.log($attempts);
