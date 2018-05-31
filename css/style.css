@@ -9,8 +9,6 @@
 }
 
 #container1 {
-    /* background-color: darkcyan; */
-
     /* gradient op zich al goed, enkel nog die midpoint die het groen smaller maakt erin steken, ofwel een point toevoegen om zelfde effect te krijgen */
     background: linear-gradient(#000000, #686500 16.59%, #D3B42F 36.09%, #218206 50%, #D7A916 57.50%, #D7A916 79.86%, #666600 100%);
     height: 100vh;
@@ -19,7 +17,6 @@
 
 
 #allcontent {
-    /* background: linear-gradient(#DBAA16, #666600); */
     background-color: transparent;
     position: relative;
     max-height: 98vh;
@@ -145,9 +142,6 @@
     left: 3.125%;
     width: 93.75%;
     height: 38.33%;
-    clip-path: polygon(0% 13.04%, 10% 13.04%, 10% 0%, 90% 0%, 90% 13.04%, 100% 13.04%, 100% 86.96%, 90% 86.96%, 90% 100%, 10% 100%, 10% 86.96%, 0% 86.96%);
-    -webkit-clip-path: polygon(0% 13.04%, 10% 13.04%, 10% 0%, 90% 0%, 90% 13.04%, 100% 13.04%, 100% 86.96%, 90% 86.96%, 90% 100%, 10% 100%, 10% 86.96%, 0% 86.96%);
-    background: #000000;
 }
 
 #lower_content_inner {
@@ -157,9 +151,6 @@
     left: 1%;
     width: 98%;
     height: 98%;
-    clip-path: polygon(0% 13.31%, 10% 13.31%, 10% 0%, 90% 0%, 90% 13.31%, 100% 13.31%, 100% 86.69%, 90% 86.69%, 90% 100%, 10% 100%, 10% 86.69%, 0% 86.69%);
-    -webkit-clip-path: polygon(0% 13.31%, 10% 13.31%, 10% 0%, 90% 0%, 90% 13.31%, 100% 13.31%, 100% 86.69%, 90% 86.69%, 90% 100%, 10% 100%, 10% 86.69%, 0% 86.69%);
-    background: linear-gradient(#218206, #D7A916 59.72%, #666600);
 }
 
 #title {
