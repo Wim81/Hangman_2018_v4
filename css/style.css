@@ -191,13 +191,13 @@
 .state6 {background-image: url("../images/state06.png");}
 .state7 {background-image: url("../images/state07.png");}
 
-.success_state0 {background-image: url("../images/state00_success_alt.png");}
-.success_state1 {background-image: url("../images/state01_success_alt.png");}
-.success_state2 {background-image: url("../images/state02_success_alt.png");}
-.success_state3 {background-image: url("../images/state03_success_alt.png");}
-.success_state4 {background-image: url("../images/state04_success_alt.png");}
-.success_state5 {background-image: url("../images/state05_success_alt.png");}
-.success_state6 {background-image: url("../images/state06_success_alt.png");}
+.success_state0 {background-image: url("../images/state00_success.png");}
+.success_state1 {background-image: url("../images/state01_success.png");}
+.success_state2 {background-image: url("../images/state02_success.png");}
+.success_state3 {background-image: url("../images/state03_success.png");}
+.success_state4 {background-image: url("../images/state04_success.png");}
+.success_state5 {background-image: url("../images/state05_success.png");}
+.success_state6 {background-image: url("../images/state06_success.png");}
 
 #searchWord {
     position: absolute;
