@@ -3,7 +3,7 @@ $( document ).ready(function() {
     /* de bibliotheek! */
     var library = ["advertisement", "airplane", "apple", "athletics", "autumn", "awful", "banana", "banner", "beer", "believe", "bicycle", "biology", "blue", "brother", "building", "candle", "cat", "ceiling", "chair", "chemistry", "cherry", "church", "clock", "coffee", "compact", "company", "computer", "concrete", "couch", "country", "cow", "cross", "cucumber", "cumbersome", "cupboard", "cutlery", "darkness", "dog", "early", "enterprise", "everybody", "execution", "expectancy", "expedition", "father", "fence", "floor", "fork", "frail", "game", "garbage", "grapefruit", "grass", "green", "greenhouse", "guitar", "history", "horse", "house", "icon", "implant", "knife", "lemon", "light", "mailman", "major", "material", "mathematics", "meadow", "mechanism", "melon", "meme", "message", "metrics", "minor", "modern", "modest", "mother", "motorway", "mountain", "music", "nation", "nature", "nephew", "night", "noise", "orange", "package", "party", "phoenix", "physics", "piano", "politics", "probably", "pumpkin", "red", "religion", "rhythm", "road", "rock", "seat", "section", "shift", "shower", "sister", "skin", "soccer", "soil", "song", "spoon", "sports", "spring", "stone", "stream", "summer", "sweat", "tea", "tennis", "therapy", "together", "train", "trial", "trust", "village", "voice", "welcome", "window", "winter", "world", "xylophone", "yard", "yellow"];
 
-    
+
     //  FUNCTIONS  //
 
         /* neem een random woord uit de bib */

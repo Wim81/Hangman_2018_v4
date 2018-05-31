@@ -12,20 +12,17 @@
     /* gradient op zich al goed, enkel nog die midpoint die het groen smaller maakt erin steken, ofwel een point toevoegen om zelfde effect te krijgen */
     background: linear-gradient(#000000, #686500 16.59%, #D3B42F 36.09%, #218206 50%, #D7A916 57.50%, #D7A916 79.86%, #666600 100%);
     height: 100vh;
-    padding-top: 1vh;
 }
-
 
 #allcontent {
     background-color: transparent;
     position: relative;
-    max-height: 98vh;
+    max-height: 100vh;
     max-width: 100vw;
 	height: 187.5vw;
 	width: 53.33vh;
     margin: 0 auto;
     box-sizing: border-box;
-    /* border: 2px solid #666600; */
 }
 
 .hidden {
