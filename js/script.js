@@ -174,6 +174,10 @@ $( document ).ready(function() {
                 fillInTheBlanks($screenArray);
                 placeScreenArray();
                 $("#btn1").addClass("highlight");
+                $("#title").slideUp(200, "linear", function() {
+                    $("#title").css("background-image", 'url("images/game_over.png")');
+                    $("#title").slideDown(200, "linear");
+                });
             }
         }
     });

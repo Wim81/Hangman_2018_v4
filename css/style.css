@@ -150,10 +150,22 @@
     height: 98%;
 }
 
+/*
 #title {
     position: absolute;
     width: 100%;
     height: 100%;
+    background-image: url("../images/title_en.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 80%;
+}
+*/
+
+#title {
+    position: absolute;
+    width: 100%;
+    height: 25%;
     background-image: url("../images/title_en.png");
     background-repeat: no-repeat;
     background-position: top;
