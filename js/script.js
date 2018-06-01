@@ -120,6 +120,11 @@ $( document ).ready(function() {
             return count;
         }
 
+        /* tel het totale aantal letters */
+        function totalLetterCount(array) {
+            return array.length;
+        }
+
         /* doe wat moet gebeuren als een letter niet in het woord wordt gevonden */
         function checkLetter(letter) {
             $letterCount = 0;
@@ -156,9 +161,14 @@ $( document ).ready(function() {
             console.log($attempts);
             placeScreenArray();
             $unfoundLetterCount = unfoundLetterCount($screenArray);
+            $totalLetterCount = totalLetterCount($randomWord);
             console.log($unfoundLetterCount);
+            console.log($totalLetterCount);
 
-            if($unfoundLetterCount == 0) {
+            if($attempts != 0 && $unfoundLetterCount != 0 && $unfoundLetterCount != $totalLetterCount) {
+                // indien meteen juiste letters worden geselecteerd, verdwijnt de initiële boodschap
+                $("#tree_girl_message").removeClass("state0");
+            } else if($unfoundLetterCount == 0) {
                 // spel gedaan en gewonnen! (toon alles in groen en alfabet knoppen worden onbruikbaar)
                 $(".letter").addClass("used");
                 $("#btn1").addClass("highlight");
