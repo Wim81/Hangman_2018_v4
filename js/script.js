@@ -188,6 +188,7 @@ $( document ).ready(function() {
         }
     });
 
+    /* klik op new word button */
     $("#container1").click( function(e) {
         if (e.target.id == "btn1") {
             e.preventDefault();
@@ -196,6 +197,14 @@ $( document ).ready(function() {
         }
     });
 
+    /* Help section toggle */
+    $("#help_button").click( function() {
+        $("#help_section_outer").css("display", "flex");
+    });
+
+    $("#help_section_outer").click( function() {
+        $("#help_section_outer").css("display", "none");
+    });
 
 
 

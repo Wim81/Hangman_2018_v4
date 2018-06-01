@@ -169,6 +169,7 @@
     position: relative;
     top: 73%;
     left: 87%;
+    cursor: pointer;
 }
 
 #tree_girl_message {
@@ -179,6 +180,7 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: 100%;
+    pointer-events: none;
 }
 
 .state0 {background-image: url("../images/state00.png");}
@@ -299,15 +301,16 @@ position: fixed;
 }
 
 #help_section_outer {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 50000;
+    cursor: pointer;
 }
 
 #help_section_inner {
