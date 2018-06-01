@@ -138,7 +138,6 @@
     top: 8%;
     left: 3.125%;
     width: 93.75%;
-    height: 38.33%;
 }
 
 #lower_content_inner {
@@ -147,7 +146,7 @@
     top: 1%;
     left: 1%;
     width: 98%;
-    height: 98%;
+    height: 100%;
 }
 
 #title {
@@ -263,8 +262,10 @@
 }
 
 #formbtn1 {
-    align-self: flex-end;
+position: fixed;
+    bottom: 0;
     margin-left: auto;
+    z-index: 10;
 }
 
 #btn1 {
@@ -276,7 +277,7 @@
     background-color: #4c4a00;
     color: #dbaa16;
     border: 3px solid #666600;
-    cursor: cell;
+    cursor: pointer;
 }
 
 @media (max-width: 380px) {

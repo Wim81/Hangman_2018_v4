@@ -148,12 +148,7 @@ $( document ).ready(function() {
     /* wat te doen bij een klik event */
     $("#alfabet").click( function(e) {
 
-        if (e.target.id == "btn1") {
-
-            e.preventDefault();
-            initAll();
-
-        } else if (e.target.id == "alfabet") {
+        if (e.target.id == "alfabet") {
         } else {
 
             checkLetter(e.target.id);
@@ -182,4 +177,16 @@ $( document ).ready(function() {
             }
         }
     });
+
+    $("#allcontent").click( function(e) {
+        if (e.target.id == "btn1") {
+            e.preventDefault();
+             initAll();
+        } else {
+        }
+    });
+
+
+
+
 });
