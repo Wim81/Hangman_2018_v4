@@ -181,8 +181,8 @@ $( document ).ready(function() {
                 fillInTheBlanks($screenArray);
                 placeScreenArray();
                 $("#btn1").addClass("highlight");
-                $("#title").hide("slide", {direction: "up"}, 500);
-                $("#game_over").show("slide", {direction: "down"}, 500);
+                $("#title").delay(250).hide("slide", {direction: "up"}, 350);
+                $("#game_over").show("slide", {direction: "down"}, 600);
             }
         }
     });
