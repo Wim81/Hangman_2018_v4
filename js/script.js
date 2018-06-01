@@ -88,7 +88,8 @@ $( document ).ready(function() {
             $randomWordArray = wordToArray($randomWord);
             $randomWordArrayExtended = wordToArrayExtended($randomWordArray);
             $screenArray = ExtendedArrayToScreenArray($randomWordArrayExtended);
-            $("#title").css("background-image", 'url("images/title_en.png")');
+            $("#title").show();
+            $("#game_over").hide();
 
             /* toon in console (mag later weg) */
             /*console.log($attempts);*/
@@ -180,10 +181,8 @@ $( document ).ready(function() {
                 fillInTheBlanks($screenArray);
                 placeScreenArray();
                 $("#btn1").addClass("highlight");
-                $("#title").hide("slide", {direction: "up"}, 500, function() {
-                    $("#title").css("background-image", 'url("images/game_over.png")');
-                    $("#title").show("slide", {direction: "down"}, 500);
-                });
+                $("#title").hide("slide", {direction: "up"}, 500);
+                $("#game_over").show("slide", {direction: "down"}, 500);
             }
         }
     });
