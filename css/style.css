@@ -135,7 +135,7 @@
 #lower_content_outer {
     position: relative;
     z-index: 5;
-    top: 8%;
+    top: 4%;
     left: 3.125%;
     width: 93.75%;
 }
@@ -272,9 +272,9 @@ position: fixed;
     z-index: 10;
     text-transform: uppercase;
     font-family: "WV_HM";
-    font-size: 3vh;
+    font-size: 6vh;
     text-align: center;
-    background-color: #4c4a00;
+    background-color: rgba(25, 89, 4, 0.5);
     color: #dbaa16;
     border-top: 3px solid black;
     border-bottom: none;
