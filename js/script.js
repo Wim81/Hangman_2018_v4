@@ -88,6 +88,7 @@ $( document ).ready(function() {
             $randomWordArray = wordToArray($randomWord);
             $randomWordArrayExtended = wordToArrayExtended($randomWordArray);
             $screenArray = ExtendedArrayToScreenArray($randomWordArrayExtended);
+            $("#help_button").show();
 
             if ( $("#game_over").is(":visible") ) {
                 $("#game_over").delay(250).hide("slide", {direction: "up"}, 350);
@@ -164,6 +165,7 @@ $( document ).ready(function() {
         } else {
 
             checkLetter(e.target.id);
+            $("#help_button").hide();
             /*console.log($screenArray);*/
             /*console.log($attempts);*/
             placeScreenArray();
