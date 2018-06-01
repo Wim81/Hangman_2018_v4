@@ -178,7 +178,7 @@ $( document ).ready(function() {
         }
     });
 
-    $("#allcontent").click( function(e) {
+    $("#container1").click( function(e) {
         if (e.target.id == "btn1") {
             e.preventDefault();
              initAll();
