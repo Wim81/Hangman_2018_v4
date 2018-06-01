@@ -7,16 +7,18 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Galgje</name>
+    <name>Hangman</name>
 
     <icon src="icon.png" width="320" height="320" />
 
     <description>
-        Een grafisch mooi uitgewerkte versie van het bekende spel.
+        Play Hangman with beautiful graphics...
     </description>
 
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         Wim Verpoorten
     </author>
+
+    <preference name="orientation" value="portrait" />
 
 </widget>
