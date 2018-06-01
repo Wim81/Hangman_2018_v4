@@ -88,8 +88,14 @@ $( document ).ready(function() {
             $randomWordArray = wordToArray($randomWord);
             $randomWordArrayExtended = wordToArrayExtended($randomWordArray);
             $screenArray = ExtendedArrayToScreenArray($randomWordArrayExtended);
-            $("#title").show();
-            $("#game_over").hide();
+
+            if ( $("#game_over").is(":visible") ) {
+                $("#game_over").delay(250).hide("slide", {direction: "up"}, 350);
+                $("#title").show("slide", {direction: "down"}, 600);
+            } else {
+                $("#title").show();
+                $("#game_over").hide();
+            }
 
             /* toon in console (mag later weg) */
             /*console.log($attempts);*/
