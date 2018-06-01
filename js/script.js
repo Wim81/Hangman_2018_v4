@@ -91,11 +91,11 @@ $( document ).ready(function() {
             $("#title").css("background-image", 'url("images/title_en.png")');
 
             /* toon in console (mag later weg) */
-            console.log($attempts);
-            console.log($randomWord);
-            console.log($randomWordArray);
-            console.log($randomWordArrayExtended);
-            console.log($screenArray);
+            /*console.log($attempts);*/
+            /*console.log($randomWord);*/
+            /*console.log($randomWordArray);*/
+            /*console.log($randomWordArrayExtended);*/
+            /*console.log($screenArray);*/
 
             /* plaats de underscore array in de juiste div */
             placeScreenArray();
@@ -137,7 +137,7 @@ $( document ).ready(function() {
             if ($letterCount == 0) {
                 $attempts--;
                 $image_state++;
-                console.log("state: "+$image_state);
+                /*console.log("state: "+$image_state);*/
                 $("#tree_girl_message").addClass("state" + $image_state);
                 $("#" + letter).addClass("used fail");
             } else {
@@ -157,13 +157,13 @@ $( document ).ready(function() {
         } else {
 
             checkLetter(e.target.id);
-            console.log($screenArray);
-            console.log($attempts);
+            /*console.log($screenArray);*/
+            /*console.log($attempts);*/
             placeScreenArray();
             $unfoundLetterCount = unfoundLetterCount($screenArray);
             $totalLetterCount = totalLetterCount($randomWord);
-            console.log($unfoundLetterCount);
-            console.log($totalLetterCount);
+            /*console.log($unfoundLetterCount);*/
+            /*console.log($totalLetterCount);*/
 
             if($attempts != 0 && $unfoundLetterCount != 0 && $unfoundLetterCount != $totalLetterCount) {
                 // indien meteen juiste letters worden geselecteerd, verdwijnt de initiële boodschap
