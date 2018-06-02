@@ -93,17 +93,21 @@ $( document ).ready(function() {
             if ( $("#game_over").is(":visible") ) {
                 $("#game_over").delay(250).hide("slide", {direction: "up"}, 350);
                 $("#title").show("slide", {direction: "down"}, 600);
+            } else if ( $("#alright").is(":visible") ) {
+                $("#alright").delay(250).hide("slide", {direction: "up"}, 350);
+                $("#title").show("slide", {direction: "down"}, 600);
             } else {
                 $("#title").show();
                 $("#game_over").hide();
+                $("#alright").hide();
             }
 
             /* toon in console (mag later weg) */
-            /*console.log($attempts);*/
-            /*console.log($randomWord);*/
-            /*console.log($randomWordArray);*/
-            /*console.log($randomWordArrayExtended);*/
-            /*console.log($screenArray);*/
+            console.log($attempts);
+            console.log($randomWord);
+            console.log($randomWordArray);
+            console.log($randomWordArrayExtended);
+            console.log($screenArray);
 
             /* plaats de underscore array in de juiste div */
             placeScreenArray();
@@ -147,8 +151,6 @@ $( document ).ready(function() {
                 $previous_bg = ".state" + $image_state;
                 $image_state++;
                 $current_bg = ".state" + $image_state;
-                console.log("previous state" + $previous_bg);
-                console.log("current state" + $current_bg);
                 $($previous_bg).fadeOut(1200);
                 $($current_bg).fadeIn(800);
                 $("#" + letter).addClass("used fail");
@@ -180,12 +182,14 @@ $( document ).ready(function() {
 
             if($attempts != 0 && $unfoundLetterCount != 0 && $unfoundLetterCount != $totalLetterCount) {
                 // indien meteen juiste letters worden geselecteerd, verdwijnt de initiële boodschap
-                $("#tree_girl_message").removeClass("state0");
+                $(".state0").fadeOut(1200);
             } else if($unfoundLetterCount == 0) {
                 // spel gedaan en gewonnen! (toon alles in groen en alfabet knoppen worden onbruikbaar)
                 $(".letter").addClass("used");
                 $("#btn1").addClass("highlight");
-                $("#tree_girl_message").addClass("success_state" + $image_state);
+                /*$("#tree_girl_message").addClass("success_state" + $image_state);*/
+                $("#title").delay(250).hide("slide", {direction: "up"}, 350);
+                $("#alright").show("slide", {direction: "down"}, 600);
 
             } else if($attempts == 0) {
                 // spel gedaan en verloren! (toon niet gevonden letters in rood en alfabet knoppen worden onbruikbaar)
