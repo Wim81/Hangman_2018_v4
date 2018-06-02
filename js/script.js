@@ -222,7 +222,14 @@ $( document ).ready(function() {
     });
 
     /* intro screen */
-    $("#intro_outer").delay(7000).hide("fade", 1000);
-    $("#intro_image").delay(5000).hide("fade", 2000);
+    window.setTimeout(function(){$(".txt1").addClass("appear");}, 500);
+    window.setTimeout(function(){$(".txt2").addClass("appear");}, 1500);
+    window.setTimeout(function(){$(".txt3").addClass("appear");}, 3000);
+    window.setTimeout(function(){$(".txt4").addClass("appear");}, 4000);
+    window.setTimeout(function(){$("#intro_text").css("background-color", "transparent");}, 5000);
+    $("#intro_image").delay(7000).hide("fade", 2000);
+    $("#intro_outer").delay(9000).hide("fade", 1000);
+    $("#intro_text").delay(7000).hide("fade", 1000);
+
 
 });

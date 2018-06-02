@@ -403,6 +403,61 @@ position: fixed;
     animation-duration: 7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+}
+
+#intro_text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    background-color: #000000;
+    transition: all 3s ease;
+}
+
+.txt {
+    text-align: center;
+}
+
+.txt1 {
+    font-family: "WV_HM", Arial, sans-serif;
+    font-size: 5vh;
+    color: #800000;
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.txt2 {
+    font-family: "WV_HM", Arial, sans-serif;
+    font-size: 15vh;
+    color: #dbaa16;
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.txt3 {
+    font-family: "WV_HM2", Arial, sans-serif;
+    font-size: 5vh;
+    color: #686500;
+    opacity: 0;
+}
+
+.txt4 {
+    font-family: "WV_HM2", Arial, sans-serif;
+    font-size: 5vh;
+    color: #686500;
+    opacity: 0;
+}
+
+.appear {
+    opacity: 0.9;
+    transition: all 3s ease;
 }
 
 @media (max-width: 380px) {
