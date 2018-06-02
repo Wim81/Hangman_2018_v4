@@ -180,14 +180,14 @@ $( document ).ready(function() {
             /*console.log($unfoundLetterCount);*/
             /*console.log($totalLetterCount);*/
 
+
             if($attempts != 0 && $unfoundLetterCount != 0 && $unfoundLetterCount != $totalLetterCount) {
                 // indien meteen juiste letters worden geselecteerd, verdwijnt de initiële boodschap
-                $(".state0").fadeOut(1200);
+
             } else if($unfoundLetterCount == 0) {
                 // spel gedaan en gewonnen! (toon alles in groen en alfabet knoppen worden onbruikbaar)
                 $(".letter").addClass("used");
                 $("#btn1").addClass("highlight");
-                /*$("#tree_girl_message").addClass("success_state" + $image_state);*/
                 $("#title").delay(250).hide("slide", {direction: "up"}, 350);
                 $("#alright").show("slide", {direction: "down"}, 600);
 

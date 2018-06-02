@@ -229,13 +229,13 @@
 .state6 {background-image: url("../images/state06.png"); display: none;}
 .state7 {background-image: url("../images/state07.png"); display: none;}
 
-.success_state0 {background-image: url("../images/state00_success.png");}
-.success_state1 {background-image: url("../images/state01_success.png");}
-.success_state2 {background-image: url("../images/state02_success.png");}
-.success_state3 {background-image: url("../images/state03_success.png");}
-.success_state4 {background-image: url("../images/state04_success.png");}
-.success_state5 {background-image: url("../images/state05_success.png");}
-.success_state6 {background-image: url("../images/state06_success.png");}
+.state1_green {background-image: url("../images/state01_green.png"); display: none;}
+.state2_green {background-image: url("../images/state02_green.png"); display: none;}
+.state3_green {background-image: url("../images/state03_green.png"); display: none;}
+.state4_green {background-image: url("../images/state04_green.png"); display: none;}
+.state5_green {background-image: url("../images/state05_green.png"); display: none;}
+.state6_green {background-image: url("../images/state06_green.png"); display: none;}
+.state7_red {background-image: url("../images/state07_red2.png"); display: none;}
 
 #searchWord {
     position: absolute;
@@ -297,6 +297,7 @@
     cursor: pointer;
     flex-basis: 13.0%;
     padding-top: 4px;
+    line-height: 6vh;
 }
 
 #a, #b, #c, #d, #d, #e, #f, #g {
@@ -357,14 +358,6 @@ position: fixed;
     z-index: 50000;
 }
 
-.help_titel {
-    font-family: "WV_HM", Arial, sans-serif;
-    color: #066600;
-    text-align: center;
-    font-size: 8vh;
-    padding-top: 4vh;
-}
-
 .help_text{
     font-family: "WV_HM2", Arial, sans-serif;
     padding-left: 30px;
@@ -372,7 +365,15 @@ position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70vh;
+    height: 90vh;
+}
+
+.help_titel {
+    font-family: "WV_HM", Arial, sans-serif;
+    color: #066600;
+    text-align: center;
+    font-size: 8vh;
+    padding-top: 4vh;
 }
 
 .help_text > p {
