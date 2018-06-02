@@ -221,6 +221,8 @@ $( document ).ready(function() {
         $("#help_section_outer").css("display", "none");
     });
 
-
+    /* intro screen */
+    $("#intro_outer").delay(7000).hide("fade", 1000);
+    $("#intro_image").delay(5000).hide("fade", 2000);
 
 });
