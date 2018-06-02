@@ -145,8 +145,11 @@ $( document ).ready(function() {
             if ($letterCount == 0) {
                 $attempts--;
                 $image_state++;
+                $current_bg = ".state" + $image_state;
+                console.log($current_bg);
                 /*console.log("state: "+$image_state);*/
-                $("#tree_girl_message").addClass("state" + $image_state);
+                /*$("#tree_girl_message").addClass("state" + $image_state);*/
+                $($current_bg).show();
                 $("#" + letter).addClass("used fail");
             } else {
                 $("#" + letter).addClass("used success");

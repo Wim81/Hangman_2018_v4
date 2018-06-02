@@ -184,7 +184,7 @@
     cursor: pointer;
 }
 
-#tree_girl_message {
+.tree_girl_message {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -196,13 +196,13 @@
 }
 
 .state0 {background-image: url("../images/state00.png");}
-.state1 {background-image: url("../images/state01.png");}
-.state2 {background-image: url("../images/state02.png");}
-.state3 {background-image: url("../images/state03.png");}
-.state4 {background-image: url("../images/state04.png");}
-.state5 {background-image: url("../images/state05.png");}
-.state6 {background-image: url("../images/state06.png");}
-.state7 {background-image: url("../images/state07.png");}
+.state1 {background-image: url("../images/state01.png"); display: none;}
+.state2 {background-image: url("../images/state02.png"); display: none;}
+.state3 {background-image: url("../images/state03.png"); display: none;}
+.state4 {background-image: url("../images/state04.png"); display: none;}
+.state5 {background-image: url("../images/state05.png"); display: none;}
+.state6 {background-image: url("../images/state06.png"); display: none;}
+.state7 {background-image: url("../images/state07.png"); display: none;}
 
 .success_state0 {background-image: url("../images/state00_success.png");}
 .success_state1 {background-image: url("../images/state01_success.png");}
