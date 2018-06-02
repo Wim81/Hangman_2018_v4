@@ -112,8 +112,8 @@ $( document ).ready(function() {
             resetButtons();
 
             /* reset image */
-            $("#tree_girl_message").removeClass();
-            $("#tree_girl_message").addClass("state0");
+            $(".tree_girl_message").hide();
+            $(".state0").show();
 
         }
 
@@ -144,12 +144,13 @@ $( document ).ready(function() {
             }
             if ($letterCount == 0) {
                 $attempts--;
+                $previous_bg = ".state" + $image_state;
                 $image_state++;
                 $current_bg = ".state" + $image_state;
-                console.log($current_bg);
-                /*console.log("state: "+$image_state);*/
-                /*$("#tree_girl_message").addClass("state" + $image_state);*/
-                $($current_bg).show();
+                console.log("previous state" + $previous_bg);
+                console.log("current state" + $current_bg);
+                $($previous_bg).fadeOut(1200);
+                $($current_bg).fadeIn(800);
                 $("#" + letter).addClass("used fail");
             } else {
                 $("#" + letter).addClass("used success");
