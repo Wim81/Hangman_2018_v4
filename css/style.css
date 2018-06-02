@@ -23,6 +23,7 @@
 	width: 53.33vh;
     margin: 0 auto;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .hidden {
@@ -206,7 +207,20 @@
     pointer-events: none;
 }
 
-.state0 {background-image: url("../images/state00.png");}
+/* The animation code */
+@keyframes moveState0 {
+    0%   {transform: translateY(-150px); opacity: 0;}
+    50%  {opacity: .9;}
+    100% {transform: translateY(-200px); opacity: 0;}
+}
+
+.state0 {
+    opacity: 0;
+    background-image: url("../images/state00_lessheight.png");
+    animation-name: moveState0;
+    animation-duration: 3s;
+}
+
 .state1 {background-image: url("../images/state01.png"); display: none;}
 .state2 {background-image: url("../images/state02.png"); display: none;}
 .state3 {background-image: url("../images/state03.png"); display: none;}
