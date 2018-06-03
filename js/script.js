@@ -119,6 +119,9 @@ $( document ).ready(function() {
             $(".tree_girl_message").hide();
             $(".state0").show();
 
+            /* reset top color gradient */
+            $("#container1_overlay").animate({opacity: 0}, 1000);
+
         }
 
         /* tel het aantal nog niet gevonden letters */
@@ -199,6 +202,7 @@ $( document ).ready(function() {
                 $("#btn1").addClass("highlight");
                 $("#title").delay(250).hide("slide", {direction: "up"}, 350);
                 $("#game_over").show("slide", {direction: "down"}, 600);
+                $("#container1_overlay").animate({opacity: 1}, 2000);
             }
         }
     });
