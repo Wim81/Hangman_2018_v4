@@ -121,6 +121,7 @@ $( document ).ready(function() {
 
             /* reset top color gradient */
             $("#container1_overlay").animate({opacity: 0}, 1000);
+            $("#container1_overlay2").animate({opacity: 0}, 1000);
 
         }
 
@@ -193,6 +194,7 @@ $( document ).ready(function() {
                 $("#btn1").addClass("highlight");
                 $("#title").delay(250).hide("slide", {direction: "up"}, 350);
                 $("#alright").show("slide", {direction: "down"}, 600);
+                $("#container1_overlay2").animate({opacity: 1}, 2000);
 
             } else if($attempts == 0) {
                 // spel gedaan en verloren! (toon niet gevonden letters in rood en alfabet knoppen worden onbruikbaar)
