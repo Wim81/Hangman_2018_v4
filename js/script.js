@@ -117,6 +117,7 @@ $( document ).ready(function() {
 
             /* reset image */
             $(".tree_girl_message").hide();
+            $(".state0").hide();
             $(".state0").show();
 
             /* reset top color gradient */
@@ -214,6 +215,7 @@ $( document ).ready(function() {
         if (e.target.id == "btn1") {
             e.preventDefault();
              initAll();
+             console.log("wow");
         } else {
         }
     });
