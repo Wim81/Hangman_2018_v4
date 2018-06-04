@@ -117,7 +117,7 @@ $( document ).ready(function() {
 
             /* reset image */
             $(".tree_girl_message").hide();
-            $(".state0").hide();
+            $(".state0").hide(0);
             $(".state0").show();
 
             /* reset top color gradient */
@@ -156,6 +156,7 @@ $( document ).ready(function() {
                 $previous_bg = ".state" + $image_state;
                 $image_state++;
                 $current_bg = ".state" + $image_state;
+                $(".state0").hide(0);
                 $($previous_bg).fadeOut(1200);
                 $($current_bg).fadeIn(800);
                 $("#" + letter).addClass("used fail");
