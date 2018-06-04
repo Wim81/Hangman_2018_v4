@@ -215,8 +215,18 @@ $( document ).ready(function() {
     $("#container1").click( function(e) {
         if (e.target.id == "btn1") {
             e.preventDefault();
-             initAll();
-             console.log("wow");
+
+            /* kleine ingreep om bij klik op new word button ook state0 animatie terug te tonen indien er niets is
+             gebeurd sinds de vorige klik op de new word button */
+            if ( $(".state0").css("display") == "block" ) {
+                $(this).hide(0, function() {
+                    $(this).show();
+                })
+            } else {
+                // hier gaat alles al goed
+            }
+
+            initAll();
         } else {
         }
     });
