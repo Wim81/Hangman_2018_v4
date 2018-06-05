@@ -12,6 +12,17 @@
     <!-- oude code voor als dat hieronder mis gaat -->
     <!-- icon src="icon.png" width="320" height="320" -->
 
+    <splash src="splash.png" />
+
+    <plugin name="cordova-plugin-splashscreen"                source="npm">
+        <preference name="SplashScreen"               value="splash" />
+        <preference name="AutoHideSplashScreen"       value="true" />
+        <preference name="SplashScreenDelay"          value="5000" />
+        <preference name="SplashMaintainAspectRatio"  value="true" />
+        <preference name="FadeSplashScreen"           value="false"/>
+        <preference name="ShowSplashScreenSpinner"    value="false" />
+    </plugin>
+
     <platform name="android">
         <icon src="icon.png" />
         <icon density="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
