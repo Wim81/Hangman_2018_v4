@@ -66,8 +66,9 @@ $( document ).ready(function() {
 
         /* zorg dat alle styling van de knoppen verwijderd is/wordt */
         function resetButtons() {
-            $(".letter").removeClass("used success fail");
-            $("#btn1").removeClass("highlight");
+            $(".letter").removeClass("used");
+            $(".letter").removeClass("success fail", 500);
+            $("#btn1").removeClass("highlight", 500);
         }
 
         /* vul de niet gevonden letters in wanneer spel gedaan (en zet deze in rood) */
