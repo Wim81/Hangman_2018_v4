@@ -253,14 +253,6 @@
 .state6 {background-image: url("../images/state06.png"); display: none;}
 .state7 {background-image: url("../images/state07.png"); display: none;}
 
-.state1_green {background-image: url("../images/state01_green.png"); display: none;}
-.state2_green {background-image: url("../images/state02_green.png"); display: none;}
-.state3_green {background-image: url("../images/state03_green.png"); display: none;}
-.state4_green {background-image: url("../images/state04_green.png"); display: none;}
-.state5_green {background-image: url("../images/state05_green.png"); display: none;}
-.state6_green {background-image: url("../images/state06_green.png"); display: none;}
-.state7_red {background-image: url("../images/state07_red2.png"); display: none;}
-
 #searchWord {
     position: absolute;
     display: block;

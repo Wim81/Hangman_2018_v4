@@ -152,6 +152,7 @@ $( document ).ready(function() {
                 }
             }
             if ($letterCount == 0) {
+                $("#" + letter).addClass("used fail");
                 $attempts--;
                 $previous_bg = ".state" + $image_state;
                 $image_state++;
@@ -159,7 +160,6 @@ $( document ).ready(function() {
                 $(".state0").hide(0);
                 $($previous_bg).fadeOut(1200);
                 $($current_bg).fadeIn(800);
-                $("#" + letter).addClass("used fail");
             } else {
                 $("#" + letter).addClass("used success");
             }
