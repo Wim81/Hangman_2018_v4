@@ -277,7 +277,7 @@
     justify-content: center;
 }
 
-/*
+
 .used {
     pointer-events: none;
 }
@@ -289,7 +289,7 @@
 .letter.fail {
     background-color: #800000;
 }
-*/
+
 
 #searchWord .unfound {
     color: #800000;

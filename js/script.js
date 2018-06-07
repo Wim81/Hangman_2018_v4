@@ -66,9 +66,8 @@ $( document ).ready(function() {
 
         /* zorg dat alle styling van de knoppen verwijderd is/wordt */
         function resetButtons() {
-            $(".letter").css({"pointer-events": "auto", "background-color": "#666600"});
-            /*$(".letter").removeClass("used");
-            $(".letter").removeClass("success fail", 500);*/
+            $(".letter").removeClass("used");
+            $(".letter").removeClass("success fail", 500);
             $("#btn1").removeClass("highlight", 500);
         }
 
@@ -154,24 +153,19 @@ $( document ).ready(function() {
                 }
             }
             if ($letterCount == 0) {
-                /*$("#" + letter).addClass("used fail");*/
+
                 $attempts--;
                 $previous_bg = ".state" + $image_state;
                 $image_state++;
                 $current_bg = ".state" + $image_state;
                 $(".state0").hide(0);
-                $("#" + letter).css({"pointer-events": "none", "background-color": "#800000"}).promise().done(function() {
-                    $($previous_bg).hide("fade", 1200);
-                    $($current_bg).show("fade", 800);
+                $("#" + letter).addClass("used fail").promise().done(function() {
+                    $($previous_bg).delay(200).hide("fade", 1200);
+                    $($current_bg).delay(200).show("fade", 800);
                 });
 
-
-                /*$($previous_bg).fadeOut(1200);
-                $($current_bg).fadeIn(800);*/
-
             } else {
-                /*$("#" + letter).addClass("used success");*/
-                $("#" + letter).css({"pointer-events": "none", "background-color": "#195904"});
+                $("#" + letter).addClass("used success");
             }
         }
 
