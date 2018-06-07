@@ -163,8 +163,8 @@ $( document ).ready(function() {
                 $(".state0").hide(0);
                 /*$($previous_bg).fadeOut(1200);
                 $($current_bg).fadeIn(800);*/
-                $($previous_bg).hide();
-                $($current_bg).show();
+                $($previous_bg).hide("fade", 1200);
+                $($current_bg).show("fade", 800);
             } else {
                 /*$("#" + letter).addClass("used success");*/
                 $("#" + letter).css({"pointer-events": "none", "background-color": "#195904"});
