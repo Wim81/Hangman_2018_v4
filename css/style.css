@@ -277,25 +277,24 @@
     justify-content: center;
 }
 
+/*
 .used {
     pointer-events: none;
 }
 
-/* to be mod */
 .letter.success {
     background-color: #195904;
 }
 
-/* to be mod */
 .letter.fail {
     background-color: #800000;
 }
+*/
 
 #searchWord .unfound {
     color: #800000;
 }
 
-/* to be mod */
 #btn1.highlight {
     background-color: #195904;
 }

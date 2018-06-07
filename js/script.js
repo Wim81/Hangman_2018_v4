@@ -66,8 +66,9 @@ $( document ).ready(function() {
 
         /* zorg dat alle styling van de knoppen verwijderd is/wordt */
         function resetButtons() {
-            $(".letter").removeClass("used");
-            $(".letter").removeClass("success fail", 500);
+            $(".letter").css({"pointer-events": "auto", "background-color": "#666600"});
+            /*$(".letter").removeClass("used");
+            $(".letter").removeClass("success fail", 500);*/
             $("#btn1").removeClass("highlight", 500);
         }
 
@@ -104,11 +105,11 @@ $( document ).ready(function() {
             }
 
             /* toon in console (mag later weg) */
-            console.log($attempts);
+            /*console.log($attempts);
             console.log($randomWord);
             console.log($randomWordArray);
             console.log($randomWordArrayExtended);
-            console.log($screenArray);
+            console.log($screenArray);*/
 
             /* plaats de underscore array in de juiste div */
             placeScreenArray();
@@ -153,7 +154,8 @@ $( document ).ready(function() {
                 }
             }
             if ($letterCount == 0) {
-                $("#" + letter).addClass("used fail");
+                /*$("#" + letter).addClass("used fail");*/
+                $("#" + letter).css({"pointer-events": "none", "background-color": "#800000"});
                 $attempts--;
                 $previous_bg = ".state" + $image_state;
                 $image_state++;
@@ -162,7 +164,8 @@ $( document ).ready(function() {
                 $($previous_bg).fadeOut(1200);
                 $($current_bg).fadeIn(800);
             } else {
-                $("#" + letter).addClass("used success");
+                /*$("#" + letter).addClass("used success");*/
+                $("#" + letter).css({"pointer-events": "none", "background-color": "#195904"});
             }
         }
 
