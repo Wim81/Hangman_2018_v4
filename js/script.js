@@ -161,8 +161,10 @@ $( document ).ready(function() {
                 $image_state++;
                 $current_bg = ".state" + $image_state;
                 $(".state0").hide(0);
-                $($previous_bg).fadeOut(1200);
-                $($current_bg).fadeIn(800);
+                /*$($previous_bg).fadeOut(1200);
+                $($current_bg).fadeIn(800);*/
+                $($previous_bg).hide();
+                $($current_bg).show();
             } else {
                 /*$("#" + letter).addClass("used success");*/
                 $("#" + letter).css({"pointer-events": "none", "background-color": "#195904"});
