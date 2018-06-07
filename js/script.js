@@ -160,10 +160,12 @@ $( document ).ready(function() {
                 $image_state++;
                 $current_bg = ".state" + $image_state;
                 $(".state0").hide(0);
-                $("#" + letter).animate({"pointer-events": "none", "background-color": "#800000"}, 0, function() {
+                $("#" + letter).css({"pointer-events": "none", "background-color": "#800000"}).promise().done(function() {
                     $($previous_bg).hide("fade", 1200);
                     $($current_bg).show("fade", 800);
                 });
+
+
                 /*$($previous_bg).fadeOut(1200);
                 $($current_bg).fadeIn(800);*/
 
