@@ -155,16 +155,18 @@ $( document ).ready(function() {
             }
             if ($letterCount == 0) {
                 /*$("#" + letter).addClass("used fail");*/
-                $("#" + letter).css({"pointer-events": "none", "background-color": "#800000"});
                 $attempts--;
                 $previous_bg = ".state" + $image_state;
                 $image_state++;
                 $current_bg = ".state" + $image_state;
                 $(".state0").hide(0);
+                $("#" + letter).animate({"pointer-events": "none", "background-color": "#800000"}, 0, function() {
+                    $($previous_bg).hide("fade", 1200);
+                    $($current_bg).show("fade", 800);
+                });
                 /*$($previous_bg).fadeOut(1200);
                 $($current_bg).fadeIn(800);*/
-                $($previous_bg).hide("fade", 1200);
-                $($current_bg).show("fade", 800);
+
             } else {
                 /*$("#" + letter).addClass("used success");*/
                 $("#" + letter).css({"pointer-events": "none", "background-color": "#195904"});
