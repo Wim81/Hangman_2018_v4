@@ -95,15 +95,15 @@ $( document ).ready(function() {
             $("#help_button").show();
 
             if ( $("#game_over").is(":visible") ) {
-                $("#game_over").delay(250).hide("slide", {direction: "up"}, 350);
+                $("#game_over").finish().delay(250).hide("slide", {direction: "up"}, 350);
                 $("#title").show("slide", {direction: "down"}, 600);
             } else if ( $("#alright").is(":visible") ) {
-                $("#alright").delay(250).hide("slide", {direction: "up"}, 350);
+                $("#alright").finish().delay(250).hide("slide", {direction: "up"}, 350);
                 $("#title").show("slide", {direction: "down"}, 600);
             } else {
                 $("#title").show();
-                $("#game_over").hide();
-                $("#alright").hide();
+                $("#game_over").finish().hide();
+                $("#alright").finish().hide();
             }
 
             /* toon in console (mag later weg) */
@@ -205,8 +205,8 @@ $( document ).ready(function() {
                 // spel gedaan en gewonnen! (toon alles in groen en alfabet knoppen worden onbruikbaar)
                 $(".letter").addClass("used");
                 $("#btn1").addClass("highlight");
-                $("#title").delay(250).hide("slide", {direction: "up"}, 350);
-                $("#alright").show("slide", {direction: "down"}, 600);
+                $("#title").finish().delay(250).hide("slide", {direction: "up"}, 350);
+                $("#alright").finish().show("slide", {direction: "down"}, 600);
                 $("#container1_overlay2").animate({opacity: 1}, 2000);
 
             } else if($attempts == 0) {
@@ -215,8 +215,8 @@ $( document ).ready(function() {
                 fillInTheBlanks($screenArray);
                 placeScreenArray();
                 $("#btn1").addClass("highlight");
-                $("#title").delay(250).hide("slide", {direction: "up"}, 350);
-                $("#game_over").show("slide", {direction: "down"}, 600);
+                $("#title").finish().delay(250).hide("slide", {direction: "up"}, 350);
+                $("#game_over").finish().show("slide", {direction: "down"}, 600);
                 $("#container1_overlay").animate({opacity: 1}, 2000);
             }
         }
