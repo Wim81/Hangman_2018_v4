@@ -160,8 +160,8 @@ $( document ).ready(function() {
                 $current_bg = ".state" + $image_state;
                 $(".state0").hide(0);
                 $("#" + letter).addClass("used fail").promise().done(function() {
-                    $($previous_bg).delay(200).hide("fade", 1200);
-                    $($current_bg).delay(200).show("fade", 800);
+                    $($previous_bg).hide();
+                    $($current_bg).show();
                 });
 
             } else {
