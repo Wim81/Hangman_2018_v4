@@ -66,8 +66,11 @@ $( document ).ready(function() {
 
         /* zorg dat alle styling van de knoppen verwijderd is/wordt */
         function resetButtons() {
+            $(".letter").css({"pointer-events": "auto", "background-color": "#666600"});
+            /*
             $(".letter").removeClass("used");
             $(".letter").removeClass("success fail", 500);
+            */
             $("#btn1").removeClass("highlight", 500);
         }
 
@@ -159,13 +162,17 @@ $( document ).ready(function() {
                 $image_state++;
                 $current_bg = ".state" + $image_state;
                 $(".state0").hide(0);
-                $("#" + letter).addClass("used fail").promise().done(function() {
+                $("#" + letter).css({"pointer-events": "none", "background-color": "#800000"});
+                $($previous_bg).hide();
+                $($current_bg).show();
+                /* $("#" + letter).addClass("used fail").promise().done(function() {
                     $($previous_bg).hide();
                     $($current_bg).show();
-                });
+                }); */
 
             } else {
-                $("#" + letter).addClass("used success");
+                $("#" + letter).css({"pointer-events": "none", "background-color": "#195904"});
+                /* $("#" + letter).addClass("used success"); */
             }
         }
 
