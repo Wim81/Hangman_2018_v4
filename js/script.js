@@ -203,7 +203,8 @@ $( document ).ready(function() {
 
             } else if($unfoundLetterCount == 0) {
                 // spel gedaan en gewonnen! (toon alles in groen en alfabet knoppen worden onbruikbaar)
-                $(".letter").addClass("used");
+                /*$(".letter").addClass("used");*/
+                $(".letter").css({"pointer-events": "none"});
                 $("#btn1").addClass("highlight");
                 $("#title").finish().delay(250).hide("slide", {direction: "up"}, 350);
                 $("#alright").finish().show("slide", {direction: "down"}, 600);
@@ -211,7 +212,8 @@ $( document ).ready(function() {
 
             } else if($attempts == 0) {
                 // spel gedaan en verloren! (toon niet gevonden letters in rood en alfabet knoppen worden onbruikbaar)
-                $(".letter").addClass("used");
+                /*$(".letter").addClass("used");*/
+                $(".letter").css({"pointer-events": "none"});
                 fillInTheBlanks($screenArray);
                 placeScreenArray();
                 $("#btn1").addClass("highlight");
