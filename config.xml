@@ -38,6 +38,16 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     -->
 
+    <feature name="SplashScreen" >
+        <param
+                name="android-package"
+                value="org.apache.cordova.splashscreen.SplashScreen" />
+
+        <param
+                name="onload"
+                value="true" />
+    </feature>
+
 
     <platform name="android">
         <icon src="icon.png" />
@@ -61,5 +71,5 @@
         <splash density="port-xxhdpi" src="res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
-    
+
 </widget>
