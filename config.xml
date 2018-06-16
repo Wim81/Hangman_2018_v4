@@ -9,6 +9,8 @@
 
     <name>Hangman</name>
 
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
+
     <!-- oude code voor als dat hieronder mis gaat -->
     <!-- icon src="icon.png" width="320" height="320" -->
 
