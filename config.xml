@@ -19,7 +19,7 @@
         Wim Verpoorten
     </author>
 
-    <plugin name="cordova-plugin-splashscreen" source="pgb"/>
+    <plugin name="cordova-plugin-splashscreen" />
 
     <!-- preferences -->
     <preference name="phonegap-version" value="cli-6.5.0" />
